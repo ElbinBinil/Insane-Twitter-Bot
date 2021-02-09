@@ -8,4 +8,4 @@ It make uses of Heroku deployment
 Elbin Binil
 
 # Check out the bot
-Just go to https://twiiter.com/insanedevbot
+Just go to https://twitter.com/InsaneDevBot
