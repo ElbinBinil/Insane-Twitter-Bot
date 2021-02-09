@@ -6,13 +6,17 @@ import tweepy
 from time import sleep
 # Import in your Twitter application keys, tokens, and secrets.
 # Make sure your keys.py file lives in the same directory as this .py file.
-from keys import *
 import os 
 from os import environ
 
+CONSUMER_KEY = environ['CONSUMER_KEY']
+CONSUMER_SECRET = environ['CONSUMER_SECRET']
+ACCESS_KEY = environ['ACCESS_TOKEN']
+ACCESS_SECRET = environ['ACCESS_TOKEN_SECRET']
 
-auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-auth.set_access_token(access_token, access_token_secret)
+
+auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
+auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 api = tweepy.API(auth)
 
 # Where q='#example', change #example to whatever hashtag or keyword you want to search.
